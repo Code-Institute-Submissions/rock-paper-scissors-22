@@ -1,254 +1,204 @@
-/* --------- Global style */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato";
+    color: #000000;
+}
 
 body {
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    color: #445361;
+    background-color: #afbddb;
+}
+
+/* Game Heading    */
+.game-title {
     text-align: center;
+    margin-bottom: 100px;
+    font-size: 80px;
+    margin: 4rem 0;
 }
 
-/* --------- Heading */
-
-.heading {
+/* Score Announcement */
+#score-announcement,
+#name-announcement {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 30px;
+
 }
 
-.logo {
-    height: 40px;
-    padding-right: 5px;
+/* Rock, Paper, Scissors Elements */
+.symbols {
+    color: rgb(219, 173, 132);
+    -webkit-text-stroke: 5px #000000;
+    font-size: 400px;
 }
 
-/* --------- Game layout */
-
-.game-area {
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
+.symbols i:hover {
+    cursor: pointer;
 }
 
-.question-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
+.win-effect {
+    color: #40916c;
+    transform: scale(1.1);
+    transition: 0.9s ease transform;
+    -webkit-text-stroke: 5px #000000;
 }
 
-.question-area span {
-    padding: 0 15px;
+.lose-effect {
+    color: #e63946;
+    transform: scale(0.9);
+    transition: 0.9s ease transform;
+    -webkit-text-stroke: 5px #000000;
 }
 
-.score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
+.draw-effect {
+    color: #030eb6;
+    transform: scale(1.05);
+    transition: 0.9s ease transform;
+    -webkit-text-stroke: 5px #000000;
 }
 
-.controls-area {
-    width: 85%;
-    margin: 30px auto;
+.game-symbols {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10em auto;
 }
 
-#score {
-    color: green;
-    font-weight: bold;
+#Scissors {
+    transform: rotate(90deg);
 }
 
-#incorrect {
-    color: red;
-    font-weight: bold;
+/* Current Result */
+.game-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.answer-message {
-    display: none;
-    font-size: 1rem;
+.game-result p {
+    font-size: 50px;
 }
 
-#answer-box {
-    border: none;
-    color: #445361;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
+.rules {
+    text-align: center;
+    margin-top: 100px;
 }
 
-.scores {
-    display: inline-block;
-    padding: 25px;
+.rules h3 {
+    font-size: 30px;
 }
 
-/* --------- Buttons */
-
-.btn {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
+.rules p {
+    font-size: 20px;
 }
 
-.btn:focus {
-    outline: none;
-}
+/* Media queries */
 
-.btn--big {
-    padding-top: 10px;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    font-size: 3.2rem;
-    margin: 0 30px;
-    transition: all 0.5s;
-}
-
-.btn--big::after {
-    content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
-    position: relative;
-    left: -0.5em;
-}
-
-.btn--blue {
-    border-color: blue;
-    color: blue;
-}
-
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: darkblue;
-    color: white;
-}
-
-.btn--orange {
-    border-color: orange;
-    color: orange;
-}
-
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: darkorange;
-    color: white;
-}
-
-.btn--red {
-    border-color: red;
-    color: red;
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color: darkred;
-    color: white;
-}
-
-.btn--green {
-    border-color: green;
-    color: green;
-}
-
-.btn--green:active,
-.btn--green:hover {
-    background-color: darkgreen;
-    color: white;
-}
-
-.btn--gray {
-    margin-top: 25px;
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
-}
-
-.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013;
-}
-
-/* --------- Media queries */
-
-@media (max-width: 414px) {
-    .controls-area {
-        width: 100%;
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1300px) {
+    .game-title {
+        font-size: 80px;
+        margin: 70px 0;
     }
 
-    .btn--big {
-        margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
+    #score-announcement,
+    #name-announcement {
+        font-size: 30px;
     }
 
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
+    .symbols {
+        font-size: 250px;
+        margin: 10px 0;
     }
 
-    .question-area {
-        padding: 10% 0;
-        width: 100%;
+    .game-symbols {
+        margin: 200px 0;
     }
 
-    .question-area span {
-        padding: 0;
-    }
-
-    .answer-message {
-        display: block;
-    }
-
-    #answer-box {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .btn--gray {
-        margin-top: 0;
-    }
-
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .heading {
-        font-size: 2rem;
+    .game-result p {
+        font-size: 40px;
     }
 }
 
-@media (max-width: 320px) {
-    .game-area {
-        height: 70vh;
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width:950px) {
+    .game-title {
+        font-size: 50px;
+        margin: 70px;
     }
 
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
+    #score-announcement,
+    #name-announcement {
+        font-size: 30px;
     }
 
-    .btn--big {
-        margin: 10px 10px;
+    .symbols {
+        font-size: 150px;
+        margin: 10px 0;
     }
 
-    .question-area {
-        padding: 10px 0;
+    .game-symbols {
+        margin: 200px 0;
     }
 
+    .game-result p {
+        font-size: 30px;
+    }
+
+    .symbols {
+        -webkit-text-stroke: 2px #000000;
+        font-size: 150px;
+        margin: 10px 0;
+    }
+
+    .win-effect,
+    .lose-effect,
+    .draw-effect {
+        -webkit-text-stroke: 1px #000000;
+    }
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width:767px) {
+    .game-title {
+        font-size: 30px;
+        margin: 70px;
+    }
+
+    #score-announcement,
+    #name-announcement {
+        font-size: 20px;
+    }
+
+    .symbols {
+        font-size: 90px;
+        margin: 10px 0;
+    }
+
+    .game-symbols {
+        margin: 100px 0;
+    }
+
+
+    .game-result p {
+        font-size: 20px;
+    }
+}
+
+/* For slightly smaller screen sizes up to 668px and down */
+@media screen and (max-height:668px) {
+    .game-symbols {
+        margin: 80px 0;
+    }
+
+    .game-result {
+        margin-bottom: 80px;
+    }
 }

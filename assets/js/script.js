@@ -1,137 +1,137 @@
-//Wait for the DOM to finish loading before running the game
-//Get the button elements and add event listeners to them
+//GLOBAL VARIABLES
+//SAVED AT THE FRONT AND SO THEY CAN EASILY BE ACCESSED INSIDE FUNCTIONS
 
+let playerResult = 0;
+let computerResult = 0;
+let playerResultNumber = document.getElementById("player-result");
+let computerResultNumber = document.getElementById("computer-result");
+let nameAnnouncement = document.getElementById("name-announcement");
+let scoreAnnouncement = document.getElementById("score-announcement");
+let rock = document.getElementById("Rock");
+let paper = document.getElementById("Paper");
+let scissors = document.getElementById("Scissors");
+let you = document.getElementById("player");
+let computer = document.getElementById("computer");
 
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
+//Forces computer to create a random number that we can use to create a random selection
+function initiateComputerSelection() {
+    const options = ["Rock", "Paper", "Scissors"];
+    const randomNumber = Math.floor(Math.random() * options.length);
+    return options[randomNumber]
+}
 
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
+/**
+ * WIN Function that will run if the player/user has won. It also adds a class for extra visibility on a winner/loser and updates the current score.
+ */
+function win(userSelection, computerSelection) {
+    playerResult++;
+    playerResultNumber.innerHTML = playerResult;
+    computerResultNumber.innerHTML = computerResult;
+    nameAnnouncement.innerHTML = "👍🏻 You Won This Round! 👍🏻";
+    scoreAnnouncement.innerHTML = `${userSelection} beats ${computerSelection}`;
+    document.getElementById(userSelection).classList.add("win-effect");
+    document.getElementById(computerSelection).classList.add("lose-effect");
+    document.getElementById("player").classList.add("win-effect");
+    document.getElementById("computer").classList.add("lose-effect");
+    setTimeout(function () {
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+    setTimeout(function () {
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+
+    setTimeout(function () {
+        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+    setTimeout(function () {
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+}
+
+/**
+ * LOSE Function that will run if the computer won a round. It also adds a class for extra visibility on a winner/loser and updates the current score.
+ */
+function lose(userSelection, computerSelection) {
+    computerResult++;
+    computerResultNumber.innerHTML = computerResult;
+    playerResultNumber.innerHTML = playerResult;
+    nameAnnouncement.innerHTML = " 👎🏻 Computer Won This Round! 👎🏻";
+    scoreAnnouncement.innerHTML = `${computerSelection} beats ${userSelection}`;
+    document.getElementById(computerSelection).classList.add("win-effect");
+    document.getElementById(userSelection).classList.add("lose-effect");
+    document.getElementById("computer").classList.add("win-effect");
+    document.getElementById("player").classList.add("lose-effect");
+    setTimeout(function () {
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+    setTimeout(function () {
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+
+    setTimeout(function () {
+        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+    setTimeout(function () {
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+}
+
+/**
+ * DRAW Function that will run only if both player and computer selected the same element. It also adds a class for extra visibility.
+ */
+function draw(userSelection, computerSelection) {
+    nameAnnouncement.innerHTML = "🤷🏻‍♂️ It's a Draw 🤷🏻‍♂️";
+    scoreAnnouncement.innerHTML = "You Both Selected The Same";
+    document.getElementById(computerSelection).classList.add("draw-effect");
+    document.getElementById(userSelection).classList.add("draw-effect");
+
+    setTimeout(function () {
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+    setTimeout(function () {
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+    }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
+
+    setTimeout(function () {
+        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+    setTimeout(function () {
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+    }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
+}
+
+/**
+ * Comparison function with embedded win/lose/draw function. They will initiate after comparison between the values to determine a winner/loser. It uses a user/player clicked value.
+ */
+function play(userSelection) {
+    const computerSelection = initiateComputerSelection();
+    if (userSelection + " vs. " + computerSelection === "Rock vs. Scissors" || // Rock beat Scissors
+        userSelection + " vs. " + computerSelection === "Paper vs. Rock" || // Paper beat Rock
+        userSelection + " vs. " + computerSelection === "Scissors vs. Paper") { //Scissors beat Paper
+        win(userSelection, computerSelection);
+
+    } else if (userSelection + " vs. " + computerSelection === "Rock vs. Paper" || //Rock lost against Paper
+        userSelection + " vs. " + computerSelection === "Paper vs. Scissors" || // Paper lost against Scissors
+        userSelection + " vs. " + computerSelection === "Scissors vs. Rock") { // Scissors lost against Rock
+        lose(userSelection, computerSelection);
+
+    } else {
+        draw(userSelection, computerSelection); // if both selections are the same, initiate DRAW function
     }
+}
 
-    document.getElementById("answer-box").addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            checkAnswer();
-        }
+/**
+ * Event listener running in the background and waiting for 'click' event. It's linked to our three elements: Rock,Paper,Scissors. Once they are clicked, it adds the value user selected to 'Play' function.
+ */
+function main() {
+    rock.addEventListener("click", function () {
+        play("Rock");
     })
-
-    runGame("addition");
-
-});
-/**
- * The main game "loop", called when the script is first loaded
- * and after the user's answer has been processed
- */
-function runGame(gameType) {
-
-    document.getElementById("answer-box").value = "";
-    document.getElementById("answer-box").focus();
-
-    // Creates two random numbers between 1 and 25
-    let num1 = Math.floor(Math.random() * 25) + 1;
-    let num2 = Math.floor(Math.random() * 25) + 1;
-
-    if (gameType === "addition") {
-        displayAdditionQuestion(num1, num2);
-    } else if (gameType === "multiply") {
-        displayMultiplyQuestion(num1, num2);
-    } else if (gameType === "subtract") {
-        displaySubtractQuestion(num1, num2)
-    } else {
-        alert(`Unknown game type: ${gameType}`);
-        throw `Unknown game type: ${gameType}. Aborting!`;
-    }
-
+    paper.addEventListener("click", function () {
+        play("Paper");
+    })
+    scissors.addEventListener("click", function () {
+        play("Scissors");
+    })
 }
-
-/**
- * Checks the answer agaist the first element in
- * the returned calculateCorrectAnswer array
- */
-function checkAnswer() {
-
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
-    let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[0];
-
-    if (isCorrect) {
-        alert("Hey! You got it right! :D");
-        incrementScore();
-    } else {
-        alert(`Awwww.... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
-        incrementWrongAnswer();
-    }
-
-    runGame(calculatedAnswer[1]);
-
-}
-
-/**
- * Gets the operands (the numbers) and the operator (plus, minus etc)
- * directly from the dom, and returns the correct answer.
- */
-function calculateCorrectAnswer() {
-
-    let operand1 = parseInt(document.getElementById('operand1').innerText);
-    let operand2 = parseInt(document.getElementById('operand2').innerText);
-    let operator = document.getElementById("operator").innerText;
-
-    if (operator === "+") {
-        return [operand1 + operand2, "addition"];
-    } else if (operator === "x") {
-        return [operand1 * operand2, "multiply"]
-    } else if (operator === "-") {
-        return [operand1 - operand2, "subtract"]
-    } else {
-        alert(`Unimplemented operator ${operator}`);
-        throw `Unimplemented operator ${operator}. Aborting!`;
-    }
-
-}
-
-
-/**
- * Gets the current score from the DOM and increments it by 1
- */
-function incrementScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
-}
-
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
- */
-function incrementWrongAnswer() {
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-}
-
-
-function displayAdditionQuestion(operand1, operand2) {
-    document.getElementById('operand1').textContent = operand1;
-    document.getElementById('operand2').textContent = operand2;
-    document.getElementById('operator').textContent = "+";
-}
-
-
-function displaySubtractQuestion(operand1, operand2) {
-    document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
-    document.getElementById('operand2').textContent = operand1 > operand2 ? operand2 : operand1;
-    document.getElementById('operator').textContent = "-";
-}
-
-
-function displayMultiplyQuestion(operand1, operand2) {
-    document.getElementById('operand1').textContent = operand1;
-    document.getElementById('operand2').textContent = operand2;
-    document.getElementById('operator').textContent = "x";
-}
+main();

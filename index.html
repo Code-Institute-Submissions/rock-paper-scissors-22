@@ -5,48 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Love Maths</title>
+    <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
-
-    <h1 class="heading">
-        <img src="assets/images/logo.png" alt="logo" class="logo">Love Maths
-    </h1>
-
-    <div class="game-area">
-        <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green"><i class="fas fa-plus"></i>
-            </button>
-            <button data-type="subtract" class="btn btn--big btn--blue"><i class="fas fa-minus"></i></button>
-            <button data-type="multiply" class="btn btn--big btn--orange"><i class="fas fa-times"></i></button>
-            <button data-type="division" class="btn btn--big btn--red"><i class="fas fa-divide"></i></button>
-        </div>
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
-        </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+    <!-- Main Heading Of The Page -->
+    <div>
+        <h1 class="game-title">Rock Paper Scissors</h1>
     </div>
 
-
-
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    <!-- Score announcement | This is a section where result & winner will be displayed -->
+    <div>
+        <p id="name-announcement">Just click on the icons below to get started.</p>
+        <p id="score-announcement">Best of Luck!</p>
     </div>
 
+    <!-- Main part of the game as it's responsive and contains 3 elements: Rock, Paper & Scissors -->
+    <div class="game-symbols">
+        <div class="symbols" id="Rock"><i class="fas fa-hand-rock"></i></div>
+        <div class="symbols" id="Paper"><i class="fas fa-hand-paper"></i></div>
+        <div class="symbols" id="Scissors"><i class="fas fa-hand-scissors"></i></div>
+    </div>
 
+    <!-- Player & Computer Score at the end -->
+    <div class="game-result">
+        <p id="player"><i class="fas fa-user"></i> You: <span id="player-result">0</span>
+            <p id="computer"><i class="fas fa-robot"></i> Computer: <span id="computer-result">0</span></p>
+    </div>
+    <script src="https://kit.fontawesome.com/741f9a3d52.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
