@@ -117,38 +117,30 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
 ### Bugs
 
-No reports of bugs as of now.
+No reports of bugs.
 
 
 
 ### Validator Testing
 
- - HTML
+ - **HTML**
     - No errors were returned when passing through [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanluke.github.io%2Frock-paper-scissors%2F).
 
-- CSS  
+- **CSS**
     - No errors were found when passing through the official [WRC(JigSaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanluke.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
-- JavaScript
+- **JavaScript**
     - No errors were found when passing the content of **script.js** file to [JS Hint](https://jshint.com/) website:  
         
-    ![JS Hint Test](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/jshint_snip.png?raw=true);
+    ![JS Hint Test](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/jshint_snip.png?raw=true)
     
 
-- Validator Testing
+- **Validator Testing**
     - I confirmed that the color palette and font is easy to read and accessible by running it through **Lighthouse** in devtools.
 
-        ![Validator Test](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/desktop-lighthouse.png?raw=true)
-
-
-
-
-### Unfixed Bugs
-
+        ![Validator Test](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lighthouse_test_snip.png?raw=true)
 
 <br />
-
-### Unfixed Bugs
 
 ## Deployment
 
@@ -170,7 +162,9 @@ The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/
 
 - Code
 
-    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to basics. The video was a great help though. It's from freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).
+    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to basics of what we covered so far. The video was a great help though.  
+    - The Video can be found on freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).  
+
 
  - Readme
 
