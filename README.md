@@ -26,85 +26,55 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     - Featured at the top of the page, the name of the game and heading is easy to see for the user.
 
-![Game Title](Readme Image)
+![Title](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/title.png?raw=true)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 
 - __The Game Area__  
 
-    ![Game Area](Readme Image)
+    ![Game Area](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/game_section.png?raw=true)
 
     - This section will allow the user play the Rock Paper Scissors game.
   
     - The user will be able to select what hand gesture to go with and immediately find out the result of the game round.
 
-    ![Hero](Readme Image)
+    - Each of the elements are responsive and change color *(more on that below)*.
 
 
-<br />
+    <br>
 
-- __Hero__  
+- __Win Event__  
 
-    ![Hero](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/hero-section.png?raw=true)
+    ![Win](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/win.png?raw=true)
 
-    - The Hero section contains a greeting and provides a user with clear information about what the site is and the idea behind the company.
+    - In the chance that the player wins the round, the winning hand will turn **green** and slightly increase in size while losing hand will turn **red** and slightly scale down.
 
-    - The aim for a background was to be peaceful yet welcoming and to blend in well with other colors on the website.
+    - This event will only last for 1 second. I thought about making the effect look longer but it would interfere with fast paced game.
 
-    - Hero section should catch the user's attention and look like a cozy place.
+    - Win event will also increment user's score by **1** and color change follows in the same manner for both the user and the computer.
 
-<br />
+    - There is also an announcement section that tells us who won the current round and elements chosen. In this case it was Rock that beat Scissors.
 
-- __Main Section__  
+    <br>
 
-    ![Main](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/main-section.png?raw=true)
+- __Lose Event__  
 
-    - The purpose of the Main Section is to provide a user with information regarding the company and ingredients that we use.  
-    It is just below the 'Hero-Section' and contains two leading pictures with **Candles** & **Kits** and their description respectfully.
+    ![Lose](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lose.png?raw=true)
 
-    - It is welcoming and notifying users that we are one of the best suppliers of custom-made products and 'Do-It-Yourself' kits.
+    - In the chance that player loses the round, the hand will turn **red** and slightly decrease in size while computers winning hand will turn **green** and slightly scale up.
 
-    - It also informs the user that all of the products are made by hand. Depending on the user's needs we have everything to get them started.
+    - Lose event will keep our current score intact while only incrementing computer's current score.
 
-    - It also has three examples of the most popular types of wax: **BeesWax**, **Soy Wax** & **Paraffin Wax**.  
-    Every ingredient has a description and a picture giving the best example of the difference between the three.  
-    It also gives a quick description regarding their individual benefits or cons.
+    - Color change will follow in the same fashion as above **Win** function.
 
-    - At the bottom of the main section is a time-lapse video showing a difference between them in a Real-Life setting.  
-    It has a nice melody to it and is also very positive and inviting.  
+   
 
 <br />
 
-- __About Section__
+- __Draw Event__
 
-    ![About](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/about-section.png?raw=true)
+    ![Draw](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/draw.png?raw=true)
 
     - The About section shows the user important information they need to know about the Candle Realm.  
     Explains quickly who we are and why the customer should join us.
@@ -112,29 +82,6 @@ It's a fun way to interact with a computer and see who would win majority of rou
     - It has a couple of cards including **Who We Are**, **Why Us?**, **Our History**, and **Contact Us** card.
 
     - At the bottom of the section is a simple but informational contact card including phone number, email address & company location.  
-<br />
-
-- __Sign Up Section__
-
-    ![Sign Up](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/sign-up.png?raw=true)
-
-     - The sign-up section has a form to collect basic details from users so they can get started with Code Realm membership.  
-
-    - The form collects the user's name, last name, and email address.
-
-    - The Sign-Up form has a background image with warm colors matching the layout and giving that warm feeling.
-
-    - The Submit button scales and changes color on hover, adding more functionality to the overall submit form.  
-<br />
-
-- __Footer__
-
-    ![Footer](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/footer-section.png?raw=true)
-
-    - The footer section is simple and visualy in line with the rest of the page.  
-    Social section is responding to hover increasing in size and changing color for better accessibility.
-    - It contains social media section on the top with all of the links working and opening in a new tab. Users can find us on **Facebook**, **Twitter**, **YouTube** and **Instagram**.
-    - It also contains a company logo **Candle Realm** and a copyright license respectfully.
 
 <br />
 
