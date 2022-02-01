@@ -17,7 +17,7 @@ let computer = document.getElementById("computer");
 function initiateComputerSelection() {
     const options = ["Rock", "Paper", "Scissors"];
     const randomNumber = Math.floor(Math.random() * options.length);
-    return options[randomNumber]
+    return options[randomNumber];
 }
 
 /**
@@ -34,17 +34,17 @@ function win(userSelection, computerSelection) {
     document.getElementById("player").classList.add("win-effect");
     document.getElementById("computer").classList.add("lose-effect");
     setTimeout(function () {
-        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
     setTimeout(function () {
-        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
 
     setTimeout(function () {
-        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+        document.getElementById("player").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
     setTimeout(function () {
-        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
 }
 
@@ -62,17 +62,17 @@ function lose(userSelection, computerSelection) {
     document.getElementById("computer").classList.add("win-effect");
     document.getElementById("player").classList.add("lose-effect");
     setTimeout(function () {
-        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
     setTimeout(function () {
-        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
 
     setTimeout(function () {
-        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+        document.getElementById("player").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
     setTimeout(function () {
-        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
 }
 
@@ -86,17 +86,17 @@ function draw(userSelection, computerSelection) {
     document.getElementById(userSelection).classList.add("draw-effect");
 
     setTimeout(function () {
-        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(userSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
     setTimeout(function () {
-        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect")
+        document.getElementById(computerSelection).classList.remove("win-effect", "lose-effect", "draw-effect");
     }, 1000); //TIMEOUT FUNCTION FOR CLICKABLE ELEMENTS
 
     setTimeout(function () {
-        document.getElementById("player").classList.remove("win-effect", "lose-effect")
+        document.getElementById("player").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
     setTimeout(function () {
-        document.getElementById("computer").classList.remove("win-effect", "lose-effect")
+        document.getElementById("computer").classList.remove("win-effect", "lose-effect");
     }, 1000); // TIMEOUT FUNCTION FOR SCORE/RESULT AT THE BOTTOM OF THE PAGE
 }
 
@@ -126,12 +126,12 @@ function play(userSelection) {
 function main() {
     rock.addEventListener("click", function () {
         play("Rock");
-    })
+    });
     paper.addEventListener("click", function () {
         play("Paper");
-    })
+    });
     scissors.addEventListener("click", function () {
         play("Scissors");
-    })
+    });
 }
 main();

@@ -1,3 +1,5 @@
+# ROCK PAPER SCISSORS
+
 Idea came from a game called: **Rock Paper Scissors**. It is a hand game usually played between two people in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V).  
 
 This is a 2nd Milestone project for Code Institute. The purpose was to build a simple and effective site with good implementation of **JavaScript**. Very simple but functional.  
@@ -76,12 +78,29 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Draw](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/draw.png?raw=true)
 
-    - The About section shows the user important information they need to know about the Candle Realm.  
-    Explains quickly who we are and why the customer should join us.
+    - If the even is draw the score will remain intact.
 
-    - It has a couple of cards including **Who We Are**, **Why Us?**, **Our History**, and **Contact Us** card.
+    - The hand will turn blue and announcement area will notify the player that both sides selected the same gesture.
 
-    - At the bottom of the section is a simple but informational contact card including phone number, email address & company location.  
+    - Score at the bottom will remain the same.  
+
+<br />
+
+<br />
+
+- __Score Section__
+
+    ![Score](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/result_section.png?raw=true)
+
+    - Score sections sits at the bottom of the page.
+
+    - It holds two icons right just before the name that perfectly matches the type of player.
+
+    - When the user wins, the score increments by **1** while turning color to green. *(displayed in the images above)*
+
+    - Win event for the computer will follow in the same fashion and increment it's result by **1** while also changing color.
+
+    - Losing the round will not affect the score. It will stay the same until next round is won.
 
 <br />
 
@@ -112,21 +131,27 @@ While writing a Media Query for Laptop devices I had moved the background image 
  ### Validator Testing
 
  - HTML
-    - No errors were returned when passing through [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fanluke.github.io%2Fcandle-realm%2F).
+    - No errors were returned when passing through [W3C validator](https://validator.w3.org/nu/#textarea).
 
 - CSS  
-    - No errors were found when passing through the official [WRC(JigSaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanluke.github.io%2Fcandle-realm%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+    - No errors were found when passing through the official [WRC(JigSaw) validator](https://jigsaw.w3.org/css-validator/validator).
 
 - Validator Testing
     - I confirmed that the color palette and font is easy to read and accessible by running it through **Lighthouse** in devtools.
 
         ![Validator Test](https://github.com/anluke/candle-realm/blob/main/assets/readme-images/desktop-lighthouse.png?raw=true)
 
+- JavaScript
+    - No errors were found when passing the content of **script.js** file to JS Hint website:
+    
+
 ### Unfixed Bugs
 
-No reports of bugs.
+No reports of bugs as of now.
 
 <br />
+
+### Unfixed Bugs
 
 ## Deployment
 
@@ -135,7 +160,7 @@ No reports of bugs.
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page provided the link to the completed website.
 
-The live link can be found here: [Candle Realm](https://anluke.github.io/candle-realm/)
+The live link can be found here: [Rock Paper Scissors]()
 
 <br />
 
@@ -143,30 +168,15 @@ The live link can be found here: [Candle Realm](https://anluke.github.io/candle-
 
 - Content
 
-    - The markup code for social media links was taken from the [CI Love-Running](https://github.com/Code-Institute-Solutions/Love-Running-Solutions).
-
-    - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+    - The icons for the project were taken from [Font Awesome](https://fontawesome.com/).
 
 
-- Media
+- Code
 
-    - The image in the hero section was taken from [Unsplash](https://images.unsplash.com/photo-1557761830-8d36eedd1718?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80).
-
-    - The image in the sign-up section was taken from [Pexels](https://images.pexels.com/photos/7445004/pexels-photo-7445004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260).
-
-    - The image in the main section for Candles was taken from [brambleberry](https://www.brambleberry.com/on/demandware.static/-/Sites-brambleberry-Library/default/dw8dfa4417/images/articles/art0171-art0190/art0179-scented-candle-kits-testing.jpg).
-
-    - The image in the main section for Kits was taken from [Willow & Finn Candles](https://cdn.shopify.com/s/files/1/0069/1866/8401/products/image_4ef06143-e2ba-4683-9586-716b7966d210.jpg?v=1633886380).
-
-    - The image in the main section for BeesWax was taken from [post.heatline](https://post.healthline.com/wp-content/uploads/2019/10/Beeswax_Beauty_Products_732x549-thumbnail.jpg).
-
-    - The image in the main section for Soy Wax was taken from [artnews](https://www.artnews.com/wp-content/uploads/2020/08/AdobeStock_310424293.jpeg).
-
-    - The image in the main section for Soy Wax was taken from [fumeibee](https://www.fumeibee.com/wp-content/uploads/2021/04/sl-2.jpg).
-
-    - The video in the main section for Wax Comparison was taken from YouTube, Account: [Sir Topham Hatt](https://www.youtube.com/watch?v=EoNDXLigmmk).
-
+    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to basics. The video was a great help though. It's from freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).
 
  - Readme
 
-    - For Readme file I used [CI readme template](https://github.com/Code-Institute-Solutions/readme-template) as a general idea and built my project around similar layout.
+    - For Readme file I used [CI P2 readme template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) as a general idea and built my project around similar layout.
+
+    - For the intro at the top of the readme file I resorted to [WikiPedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
