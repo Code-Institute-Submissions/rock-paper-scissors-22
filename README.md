@@ -1,6 +1,6 @@
 # ROCK PAPER SCISSORS
 
-Idea came from a game called: **Rock Paper Scissors**. It is a hand game usually played between two people in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V).  
+The idea came from a game called: **Rock Paper Scissors**. It is a hand game usually played between two people in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V).  
 
 This is a 2nd Milestone project for Code Institute. The purpose was to build a simple and effective site with good implementation of **JavaScript**. Very simple but functional.  
 It was a perfect little project to use some of the JavaScript content covered so far.  
@@ -10,15 +10,15 @@ The live website can be found [here](link to webpage).
 
 ![Devices](picture across different devices)
 
-<br />
+<br>
 
 ## User Story
 
-Target Audience for this game would be children aged from **5 - 10** years.  
+The Target Audience for this game would be children aged from **5 - 10** years.  
 The game should be played clearly across different devices and respond instantly.  
 There is no time limit on the game itself.  
 
-It's a fun way to interact with a computer and see who would win majority of rounds.
+It's a fun way to interact with a computer and see who would win a majority of rounds.
 
 
 
@@ -37,11 +37,11 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Game Area](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/game_section.png?raw=true)
 
-    - This section will allow the user play the Rock Paper Scissors game.
+    - This section will allow the user to play the Rock Paper Scissors game.
   
     - The user will be able to select what hand gesture to go with and immediately find out the result of the game round.
 
-    - Each of the elements are responsive and change color *(more on that below)*.
+    - All the elements are responsive and change color depending on the round outcome. *(more on that below)*.
 
 
     <br>
@@ -50,13 +50,13 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Win](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/win.png?raw=true)
 
-    - In the chance that the player wins the round, the winning hand will turn **green** and slightly increase in size while losing hand will turn **red** and slightly scale down.
+    - In the chance that the player wins the round, the winning hand will turn **green** and slightly increase in size while the losing hand will turn **red** and slightly scale down.
 
-    - This event will only last for 1 second. I thought about making the effect look longer but it would interfere with fast paced game.
+    - This event will only last for 1 second. I thought about making the effect look longer but it would interfere with fast-paced game.
 
-    - Win event will also increment user's score by **1** and color change follows in the same manner for both the user and the computer.
+    - Win event will also increment the user's score by **1** and color change follows in the same manner for both the user and the computer.
 
-    - There is also an announcement section that tells us who won the current round and elements chosen. In this case it was Rock that beat Scissors.
+    - There is also an announcement section that tells us who won the current round and the elements chosen. In this case, it was Rock that beat Scissors.
 
     <br>
 
@@ -64,9 +64,9 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Lose](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lose.png?raw=true)
 
-    - In the chance that player loses the round, the hand will turn **red** and slightly decrease in size while computers winning hand will turn **green** and slightly scale up.
+    - In the chance that the player loses the round, the hand will turn **red** and slightly decrease in size while the computers winning hand will turn **green** and slightly scale up.
 
-    - Lose event will keep our current score intact while only incrementing computer's current score.
+    - Lose event will keep our current score intact while only incrementing the computers current score.
 
     - Color change will follow in the same fashion as above **Win** function.
 
@@ -78,9 +78,9 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Draw](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/draw.png?raw=true)
 
-    - If the even is draw the score will remain intact.
+    - If the event is a **draw** the score will remain intact.
 
-    - The hand will turn blue and announcement area will notify the player that both sides selected the same gesture.
+    - The hand will turn blue and the announcement area will notify the player that both sides selected the same gesture.
 
     - Score at the bottom will remain the same.  
 
@@ -92,15 +92,15 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     ![Score](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/result_section.png?raw=true)
 
-    - Score sections sits at the bottom of the page.
+    - The Score section sits at the bottom of the page.
 
     - It holds two icons right just before the name that perfectly matches the type of player.
 
     - When the user wins, the score increments by **1** while turning color to green. *(displayed in the images above)*
 
-    - Win event for the computer will follow in the same fashion and increment it's result by **1** while also changing color.
+    - Win event for the computer will follow in the same fashion and increment its result by **1** while also changing color.
 
-    - Losing the round will not affect the score. It will stay the same until next round is won.
+    - Losing the round will not affect the score. It will stay the same until the next round is won.
 
 
 
@@ -136,7 +136,7 @@ No reports of bugs.
     
 
 - **Validator Testing**
-    - I confirmed that the color palette and font is easy to read and accessible by running it through **Lighthouse** in devtools.
+    - I confirmed that the color palette and font is easy to read and accessible by running it through **Lighthouse** in dev tools.
 
         ![Validator Test](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lighthouse_test_snip.png?raw=true)
 
@@ -145,7 +145,7 @@ No reports of bugs.
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, navigate to Settings tab.
+  - In the GitHub repository, navigate to the Settings tab.
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page provided the link to the completed website.
 
@@ -162,12 +162,12 @@ The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/
 
 - Code
 
-    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to basics of what we covered so far. The video was a great help though.  
-    - The Video can be found on freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).  
+    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to the basics of what we covered so far. The video was a great help though.  
+    - The Video can be found on the freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).  
 
 
  - Readme
 
-    - For Readme file I used is [CI P2 Readme Template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) as a general idea and built my project around similar layout.
+    - For Readme file, I used is [CI P2 Readme Template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) as a general idea and built my project around a similar layout.
 
     - For the intro at the top of the readme file I resorted to [WikiPedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).

@@ -101,33 +101,6 @@ body {
 
 /* Media queries */
 
-/* @media screen and (min-width: 1300px) {
-
-    .game-title {
-        font-size: 80px;
-        margin: 70px 0;
-    }
-
-    #score-announcement,
-    #name-announcement {
-        font-size: 30px;
-    }
-
-    .symbols {
-        font-size: 200px;
-        margin: 10px 0;
-    }
-
-    .game-symbols {
-        margin: 100px 0;
-    }
-
-    .game-result p {
-        font-size: 40px;
-    }
-} */
-
-
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (min-width: 1300px) {
     .game-title {
@@ -141,7 +114,6 @@ body {
     }
 
     .symbols {
-        font-size: 200px;
         margin: 10px 0;
     }
 
