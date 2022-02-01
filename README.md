@@ -117,7 +117,7 @@ It's a fun way to interact with a computer and see who would win a majority of r
 
 ### Bugs
 
-No reports of bugs.
+ - No reports of bugs.
 
 
 
@@ -145,6 +145,8 @@ No reports of bugs.
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+
   - In the GitHub repository, navigate to the Settings tab.
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page provided the link to the completed website.
