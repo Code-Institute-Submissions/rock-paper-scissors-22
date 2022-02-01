@@ -10,8 +10,6 @@ let scoreAnnouncement = document.getElementById("score-announcement");
 let rock = document.getElementById("Rock");
 let paper = document.getElementById("Paper");
 let scissors = document.getElementById("Scissors");
-let you = document.getElementById("player");
-let computer = document.getElementById("computer");
 
 //Forces computer to create a random number that we can use to create a random selection
 function initiateComputerSelection() {
