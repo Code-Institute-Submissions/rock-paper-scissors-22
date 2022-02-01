@@ -102,7 +102,7 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
     - Losing the round will not affect the score. It will stay the same until next round is won.
 
-<br />
+
 
 ## Testing
 
@@ -117,24 +117,16 @@ It's a fun way to interact with a computer and see who would win majority of rou
 
 ### Bugs
 
-- When I tested my page through **Multi Device Website Mockup Generator** I discovered a slight offset in the hero background image.  
-While writing a Media Query for Laptop devices I had moved the background image left by ```-1 cm``` instead of moving it ```left``` to allow for better representation of the Hero background image.
+No reports of bugs as of now.
 
-```
-  #hero {
-    background-position-x: -1cm;
-  }
-```
- - Removing the ```-1 cm``` and replacing it with ```left``` attribute fixed the issue and got the Hero image to respond how I intended.
-
-
+<br>
  ### Validator Testing
 
  - HTML
-    - No errors were returned when passing through [W3C validator](https://validator.w3.org/nu/#textarea).
+    - No errors were returned when passing through [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanluke.github.io%2Frock-paper-scissors%2F).
 
 - CSS  
-    - No errors were found when passing through the official [WRC(JigSaw) validator](https://jigsaw.w3.org/css-validator/validator).
+    - No errors were found when passing through the official [WRC(JigSaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanluke.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - Validator Testing
     - I confirmed that the color palette and font is easy to read and accessible by running it through **Lighthouse** in devtools.
@@ -143,11 +135,10 @@ While writing a Media Query for Laptop devices I had moved the background image 
 
 - JavaScript
     - No errors were found when passing the content of **script.js** file to JS Hint website:
-    
+
 
 ### Unfixed Bugs
 
-No reports of bugs as of now.
 
 <br />
 
@@ -160,7 +151,7 @@ No reports of bugs as of now.
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page provided the link to the completed website.
 
-The live link can be found here: [Rock Paper Scissors]()
+The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/rock-paper-scissors/)
 
 <br />
 
@@ -177,6 +168,6 @@ The live link can be found here: [Rock Paper Scissors]()
 
  - Readme
 
-    - For Readme file I used [CI P2 readme template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) as a general idea and built my project around similar layout.
+    - For Readme file I used is [CI P2 Readme Template](https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md) as a general idea and built my project around similar layout.
 
     - For the intro at the top of the readme file I resorted to [WikiPedia](https://en.wikipedia.org/wiki/Rock_paper_scissors).
