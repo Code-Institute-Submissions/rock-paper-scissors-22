@@ -121,7 +121,7 @@ function play(userSelection) {
 }
 
 /**
- * Event listener running in the background and waiting for 'click' event. It's linked to our three elements: Rock,Paper,Scissors. Once they are clicked, it adds the value user selected to 'Play' function.
+ * Event listener running in the background and waiting for 'click' event. It's linked to our three elements: Rock,Paper,Scissors. Once they are clicked, it adds the value that user clicked on to 'Play' function.
  */
 function main() {
     rock.addEventListener("click", function () {
