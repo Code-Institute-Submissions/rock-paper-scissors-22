@@ -33,6 +33,13 @@ body {
 }
 
 /* Rock, Paper, Scissors Elements */
+
+.game-symbols {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px auto;
+}
+
 .symbols {
     color: rgb(219, 173, 132);
     -webkit-text-stroke: 2px #000000;
@@ -65,12 +72,6 @@ body {
     transform: scale(1.05);
     transition: 0.9s ease transform;
     -webkit-text-stroke: 2px #000000;
-}
-
-.game-symbols {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10em auto;
 }
 
 #Scissors {
@@ -149,11 +150,6 @@ body {
         font-size: 30px;
     }
 
-    .symbols {
-        font-size: 150px;
-        margin: 10px 0;
-    }
-
     .game-symbols {
         margin: 70px auto;
     }
@@ -165,8 +161,8 @@ body {
     .symbols {
         -webkit-text-stroke: 2px #000000;
         font-size: 150px;
-        margin: 10px 0;
     }
+
 
     .win-effect,
     .lose-effect,
