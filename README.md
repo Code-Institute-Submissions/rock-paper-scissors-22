@@ -65,7 +65,7 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
     ![Lose](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lose.png?raw=true)
 
-    - In the chance that the player loses the round, the hand will turn **red** and slightly decrease in size while the computers winning hand will turn **green** and slightly scale up.
+    - In the chance that the player loses the round, the hand will turn **red** and slightly decrease in size while the computer winning hand will turn **green** and slightly scale up.
 
     - **'Lose'** event will keep our current score intact while only incrementing the computers current score.
 
@@ -109,9 +109,7 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
 - The page is responsive and contains all the functions across different screen sizes using the dev tools device toolbar.
 
-- I confirmed that header/navbar, hero, main-section, about, sign up and footer are all readable and easy to understand.
-
-- I also confirm that submit form works: requires an entry in every field and also checks if a user has put a correct email address by checking the email address format.
+- I confirmed that all of the content is readable and easy to understand.
 
 
 ### Bugs
@@ -146,7 +144,6 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-
   - In the GitHub repository, navigate to the Settings tab.
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page provided the link to the completed website.
@@ -164,8 +161,8 @@ The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/
 
 - Code
 
-    - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to the basics of what we covered so far. The video was a great help though.  
-    - The Video can be found on the freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).  
+    - Before starting the project I was looking for something that will give me the idea of how to implement **JS** in the best possible way. I ended up not complicating the code as I wanted to stay true to the basics of what we covered so far.
+    - The Video that I used as a reference can be found on the **freeCodeCamp** YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).
 
  - Readme
 
