@@ -90,19 +90,6 @@ body {
     font-size: 40px;
 }
 
-.rules {
-    text-align: center;
-    margin-top: 100px;
-}
-
-.rules h3 {
-    font-size: 30px;
-}
-
-.rules p {
-    font-size: 20px;
-}
-
 /* Media queries */
 
 /* For larger to medium screens size from 1200px wide and down */
