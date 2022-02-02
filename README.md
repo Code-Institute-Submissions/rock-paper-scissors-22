@@ -54,7 +54,7 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
     - This event will only last for 1 second. I thought about making the effect look longer but it would interfere with fast-paced game.
 
-    - Win event will also increment the user's score by **1** and color change follows in the same manner for both the user and the computer.
+    - **'Win'** event will also increment the user's score by **1** and color change follows in the same manner for both the user and the computer.
 
     - There is also an announcement section that tells us who won the current round and the elements chosen. In this case, it was Rock that beat Scissors.
 
@@ -67,9 +67,9 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
     - In the chance that the player loses the round, the hand will turn **red** and slightly decrease in size while the computers winning hand will turn **green** and slightly scale up.
 
-    - Lose event will keep our current score intact while only incrementing the computers current score.
+    - **'Lose'** event will keep our current score intact while only incrementing the computers current score.
 
-    - Color change will follow in the same fashion as above **Win** function.
+    - Color change will follow in the same fashion as above **'Win'** function.
    
 
 <br />

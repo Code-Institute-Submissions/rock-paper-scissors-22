@@ -79,7 +79,7 @@ function lose(userSelection, computerSelection) {
  */
 function draw(userSelection, computerSelection) {
     nameAnnouncement.innerHTML = "🤷🏻‍♂️ It's a Draw 🤷🏻‍♂️";
-    scoreAnnouncement.innerHTML = "You Both Selected The Same";
+    scoreAnnouncement.innerHTML = "You Are Both Equal. Try again!";
     document.getElementById(computerSelection).classList.add("draw-effect");
     document.getElementById(userSelection).classList.add("draw-effect");
 
