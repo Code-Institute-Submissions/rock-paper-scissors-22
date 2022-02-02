@@ -5,16 +5,16 @@ The idea came from a game called: **Rock Paper Scissors**. It is a hand game usu
 This is a 2nd Milestone project for Code Institute. The purpose was to build a simple and effective site with good implementation of **JavaScript**. Very simple but functional.  
 It was a perfect little project to use some of the JavaScript content covered so far.  
 
-The live website can be found [here](link to webpage).
+The live website can be found [here](https://anluke.github.io/rock-paper-scissors/).
 
 
-![Devices](picture across different devices)
+![Devices](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/mockup_image.png?raw=true)
 
 <br>
 
 ## User Story
 
-The Target Audience for this game would be children aged from **5 - 10** years.  
+The Target Audience for this game would be children aged from **7 - 12** years.  
 The game should be played clearly across different devices and respond instantly.  
 There is no time limit on the game itself.  
 
