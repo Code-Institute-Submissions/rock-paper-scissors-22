@@ -11,7 +11,9 @@ let rock = document.getElementById("Rock");
 let paper = document.getElementById("Paper");
 let scissors = document.getElementById("Scissors");
 
-//Forces computer to create a random number that we can use to create a random selection
+/**
+ *  Forces computer to create a random number that we can use to create a random selection.
+ */
 function initiateComputerSelection() {
     const options = ["Rock", "Paper", "Scissors"];
     const randomNumber = Math.floor(Math.random() * options.length);

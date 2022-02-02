@@ -148,7 +148,6 @@ body {
         font-size: 150px;
     }
 
-
     .win-effect,
     .lose-effect,
     .draw-effect {
@@ -177,7 +176,6 @@ body {
     .game-symbols {
         margin: 100px 0;
     }
-
 
     .game-result p {
         font-size: 20px;
