@@ -29,7 +29,6 @@ body {
     margin-top: 30px;
     text-align: center;
     font-size: 30px;
-
 }
 
 /* Rock, Paper, Scissors Elements */
@@ -121,7 +120,6 @@ body {
 
     .game-result p {
         font-size: 40px;
-
     }
 }
 

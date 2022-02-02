@@ -10,15 +10,15 @@ The live website can be found [here](https://anluke.github.io/rock-paper-scissor
 
 ![Devices](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/mockup_image.png?raw=true)
 
+
 <br>
 
 ## User Story
 
-The Target Audience for this game would be children aged from **7 - 12** years.  
-The game should be played clearly across different devices and respond instantly.  
-There is no time limit on the game itself.  
-
-It's a fun way to interact with a computer and see who would win a majority of rounds.
+-  The Target Audience for this game would be children aged from **7 - 12** years.
+-  The game should be played clearly across different devices and respond instantly.  
+-  There is no time limit on the game itself.  
+-  It's a fun way to interact with a computer and see who would win a majority of rounds.
 
 
 
@@ -44,7 +44,7 @@ It's a fun way to interact with a computer and see who would win a majority of r
     - All the elements are responsive and change color depending on the round outcome. *(more on that below)*.
 
 
-    <br>
+ <br>
 
 - __Win Event__  
 
@@ -58,7 +58,8 @@ It's a fun way to interact with a computer and see who would win a majority of r
 
     - There is also an announcement section that tells us who won the current round and the elements chosen. In this case, it was Rock that beat Scissors.
 
-    <br>
+
+<br>
 
 - __Lose Event__  
 
@@ -69,7 +70,6 @@ It's a fun way to interact with a computer and see who would win a majority of r
     - Lose event will keep our current score intact while only incrementing the computers current score.
 
     - Color change will follow in the same fashion as above **Win** function.
-
    
 
 <br />
@@ -84,7 +84,6 @@ It's a fun way to interact with a computer and see who would win a majority of r
 
     - Score at the bottom will remain the same.  
 
-<br />
 
 <br />
 
@@ -140,6 +139,7 @@ It's a fun way to interact with a computer and see who would win a majority of r
 
         ![Validator Test](https://github.com/anluke/rock-paper-scissors/blob/main/assets/images/readme_snips/lighthouse_test_snip.png?raw=true)
 
+
 <br />
 
 ## Deployment
@@ -153,6 +153,7 @@ It's a fun way to interact with a computer and see who would win a majority of r
 
 The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/rock-paper-scissors/)
 
+
 <br />
 
 ## Credits
@@ -161,12 +162,10 @@ The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/
 
     - The icons for the project were taken from [Font Awesome](https://fontawesome.com/).
 
-
 - Code
 
     - Before starting the project I watched this video to kind of get the idea of how to implement it all in the best possible way. I ended up not complicating the code as I wanted to stay true to the basics of what we covered so far. The video was a great help though.  
     - The Video can be found on the freeCodeCamp YouTube Channel [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0).  
-
 
  - Readme
 

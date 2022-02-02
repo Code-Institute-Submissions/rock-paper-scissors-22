@@ -26,7 +26,7 @@ function win(userSelection, computerSelection) {
     playerResultNumber.innerHTML = playerResult;
     computerResultNumber.innerHTML = computerResult;
     nameAnnouncement.innerHTML = "👍🏻 You Won This Round! 👍🏻";
-    scoreAnnouncement.innerHTML = `${userSelection} beats ${computerSelection}`;
+    scoreAnnouncement.innerHTML = `${userSelection} beat ${computerSelection}`;
     document.getElementById(userSelection).classList.add("win-effect");
     document.getElementById(computerSelection).classList.add("lose-effect");
     document.getElementById("player").classList.add("win-effect");
@@ -54,7 +54,7 @@ function lose(userSelection, computerSelection) {
     computerResultNumber.innerHTML = computerResult;
     playerResultNumber.innerHTML = playerResult;
     nameAnnouncement.innerHTML = " 👎🏻 Computer Won This Round! 👎🏻";
-    scoreAnnouncement.innerHTML = `${computerSelection} beats ${userSelection}`;
+    scoreAnnouncement.innerHTML = `${computerSelection} beat ${userSelection}`;
     document.getElementById(computerSelection).classList.add("win-effect");
     document.getElementById(userSelection).classList.add("lose-effect");
     document.getElementById("computer").classList.add("win-effect");
