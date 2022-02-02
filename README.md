@@ -159,6 +159,8 @@ The live link can be found here: [Rock Paper Scissors](https://anluke.github.io/
 
     - The icons for the project were taken from [Font Awesome](https://fontawesome.com/).
 
+    - Favicon was created through [Favicon Generator](https://favicon.io/). The picture was downloaded from APK Android Game Called: Rock Paper Scissor Classic. The link can be found [here](https://apkfab.com/rock-paper-scissor-classic/com.gms.rock.paper.battle.free).
+
 - Code
 
     - Before starting the project I was looking for something that will give me the idea of how to implement **JS** in the best possible way. I ended up not complicating the code as I wanted to stay true to the basics of what we covered so far.
